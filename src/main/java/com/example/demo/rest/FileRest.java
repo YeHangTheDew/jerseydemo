@@ -1,14 +1,11 @@
 package com.example.demo.rest;
 
-import com.example.demo.file.DateUtil;
-import com.example.demo.file.FileZipUtil;
-import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
-import org.glassfish.jersey.media.multipart.FormDataParam;
+import com.example.demo.util.DateUtil;
+import com.example.demo.util.FileZipUtil;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
@@ -17,9 +14,6 @@ import javax.ws.rs.core.MediaType;
 import java.io.*;
 import java.net.URLEncoder;
 import java.text.MessageFormat;
-import java.util.Calendar;
-import java.util.zip.ZipInputStream;
-import java.util.zip.ZipOutputStream;
 
 @Component
 @Path("/file")
